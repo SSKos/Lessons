@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+</head>
+<body>
+
+</body>
+<script>
+    //let num = 21;
+    let od, N, div, x = 0;
+    div = 2;
+    N = 11;
+        while ((div < N) && (x !== 1)) {
+            od = N % div;
+            x = 0;
+            console.log(N, "— N  ", div, "— div  ", od, "— od  ");
+            if (od !== 0) {
+                div++;
+            } else {
+                x = 1;
+            }
+            console.log(x, "— X");
+        }
+    console.log(x, "— X");
+    if (x !== 0) {
+        console.log(x, N, "— Число составное");
+    } else {
+        console.log(N, "— Число простое");
+    }
+
+</script>
+</html>
