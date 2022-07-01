@@ -11,24 +11,27 @@
     //let num = 21;
     let od, N, div, x = 0;
     div = 2;
-    N = 11;
-        while ((div < N) && (x !== 1)) {
-            od = N % div;
-            x = 0;
-            // console.log(N, "— N  ", div, "— div  ", od, "— od  ");
-            if (od !== 0) {
-                div++;
-            } else {
-                x = 1;
-            }
+    N = 162;
+        while (N <= 100) {
+            while ((div < N) && (x !== 1)) {
+                    od = N % div;
+                    x = 0;
+                    // console.log(N, "— N  ", div, "— div  ", od, "— od  ");
+                    if (od !== 0) {
+                        div++;
+                    } else {
+                        x = 1;
+                    }
+                    //console.log(x, "— X");
+                }
             //console.log(x, "— X");
+            if (x !== 0) {
+                console.log(x, N, "— Число простое");
+            }
+            // else {
+            //     console.log(N, "— Число составное простое");
+            // }
+            N++;
         }
-    console.log(x, "— X");
-    if (x !== 0) {
-        console.log(x, N, "— Число составное");
-    } else {
-        console.log(N, "— Число простое");
-    }
-
-</script>
+    </script>
 </html>
